@@ -42,10 +42,12 @@ namespace Exponents
              * do this by creating a methd as in the squaring example above */
             UxOutputLabel.Text += "\nCube is: " + Cube(num).ToString();
 
-            // OUTPUT
-            // set the output to visible
+        // OUTPUT
+        // set the output to visible
+        UxOutputLabel: Visible = true;
 
             // turn the Go button off
+            UxGoButton.Enabled = false;
         }
 
         public int Square(int num)
@@ -63,8 +65,13 @@ namespace Exponents
         private void xResetButton_Click(object sender, EventArgs e)
         {
             // the input and output text should be emptied
+            UxInputTextBox.Text = "";
+            UxOutputLabel.Text = "";
+
             // turn the output to invisible
+            UxOutputLabel.Visible = true;
             // turn the Go button back on
+            UxGoButton.Enabled = true;
         }
 
     }
