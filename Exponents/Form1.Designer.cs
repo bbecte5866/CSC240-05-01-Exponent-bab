@@ -96,6 +96,7 @@
             this.Controls.Add(this.UxInputTextBox);
             this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exponents Demo";
             this.ResumeLayout(false);
             this.PerformLayout();
